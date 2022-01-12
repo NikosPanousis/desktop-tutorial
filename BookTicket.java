@@ -55,24 +55,24 @@ public class BookTicket{
 
 		boolean flag = false;
 		while(flag == false){
-			System.out.println("Πληκτρολογίστε τον αριθμό της σειράς που θέλετε.");
+			System.out.println("ΓΓ«Γ§ΓªΓ΄Γ±Γ―Γ«Γ―Γ£ΓΓ³Γ΄Γ¥ Γ΄Γ―Γ­ Γ΅Γ±Γ©Γ¨Γ¬ΓΌ Γ΄Γ§Γ² Γ³Γ¥Γ©Γ±ΓΓ² Γ°Γ―Γµ Γ¨ΓΓ«Γ¥Γ΄Γ¥.");
 			int ln = input.nextInt();
-			System.out.println("Πληκτρολογίστε τον αριθμό της θέσης που θέλετε.");
+			System.out.println("ΓΓ«Γ§ΓªΓ΄Γ±Γ―Γ«Γ―Γ£ΓΓ³Γ΄Γ¥ Γ΄Γ―Γ­ Γ΅Γ±Γ©Γ¨Γ¬ΓΌ Γ΄Γ§Γ² Γ¨ΓΓ³Γ§Γ² Γ°Γ―Γµ Γ¨ΓΓ«Γ¥Γ΄Γ¥.");
 			int st = input.nextInt();
 			if(AvArray[ln][st] == true){
-				System.out.println("Η θέση είναι δεσμευμένη");
+				System.out.println("Γ‡ Γ¨ΓΓ³Γ§ Γ¥ΓΓ­Γ΅Γ© Γ¤Γ¥Γ³Γ¬Γ¥ΓµΓ¬ΓΓ­Γ§");
 			}else{
-				System.out.println("Δεσμεύσατε την θέση με επιτυχία");
-				System.out.println("Πραγματοποιείται έκδοση εισιτηρίου...");
+				System.out.println("Γ„Γ¥Γ³Γ¬Γ¥Γ½Γ³Γ΅Γ΄Γ¥ Γ΄Γ§Γ­ Γ¨ΓΓ³Γ§ Γ¬Γ¥ Γ¥Γ°Γ©Γ΄ΓµΓ·ΓΓ΅");
+				System.out.println("ΓΓ±Γ΅Γ£Γ¬Γ΅Γ΄Γ―Γ°Γ―Γ©Γ¥ΓΓ΄Γ΅Γ© ΓΓªΓ¤Γ―Γ³Γ§ Γ¥Γ©Γ³Γ©Γ΄Γ§Γ±ΓΓ―Γµ...");
 				time = Time();
-				System.out.println("Ticket [id=" + moviecode + ", price=" + price + ", movie=" + moviename +
+				System.out.println("Tict [id=" + moviecode + ", price=" + price + ", movie=" + moviename +
 				", time=" + time + ", line=" + ln + ", seat=" + st );
 
 
 			}
-			System.out.println("Θέλετε να κλείσετε άλλη θέση;Ναι/Όχι");
+			System.out.println("ΓΓΓ«Γ¥Γ΄Γ¥ Γ­Γ΅ ΓªΓ«Γ¥ΓΓ³Γ¥Γ΄Γ¥ ΓΓ«Γ«Γ§ Γ¨ΓΓ³Γ§;ΓΓ΅Γ©/ΒΌΓ·Γ©");
 			String option = input.nextLine();
-			if(option == "Όχι"){
+			if(option == "ΒΌΓ·Γ©"){
 				flag = true;
 			}
 		}
